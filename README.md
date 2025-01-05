@@ -1,5 +1,4 @@
 # AICT FINAL PROJECT
-Bakery Website Project
 This project is a responsive and visually appealing website for a bakery, showcasing various products like cookies and pretzels. It allows users to view product details, navigate between pages, and place orders for delicious baked goods.
 
 Features
@@ -28,8 +27,8 @@ Copy code
   │     ├── ...
 How to Run Locally
 Clone the Repository:
-
-
+bash
+Copy code
 git clone https://github.com/your-repo/bakery-website.git
 Navigate to the Project Folder:
 bash
