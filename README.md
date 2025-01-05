@@ -13,28 +13,19 @@ CSS: For styling and creating a responsive layout.
 Project Structure
 graphql
 Copy code
-/project
-  ├── index.html             # Main landing page (projectaict.html in your files)
-  ├── product5.html          # Oatmeal Raisin Cookies page
-  ├── product6.html          # Butter Shortbread page
-  ├── about.html             # About Us page (link placeholder)
-  ├── contact.html           # Contact Us page (link placeholder)
-  ├── recipies.html          # Recipes page (link placeholder)
-  ├── place_order.html       # Place order form (link placeholder)
-  ├── assets/                # Images and other static files
-  │     ├── cookiep5.png
-  │     ├── cookiep6.png
-  │     ├── ...
+
 How to Run Locally
 Clone the Repository:
-bash
-Copy code
+
 git clone https://github.com/your-repo/bakery-website.git
+
 Navigate to the Project Folder:
-bash
-Copy code
+
 cd bakery-website
-Open in Browser: Open the index.html file in your preferred browser to start exploring the website.
+
+Open in Browser:
+
+Open the index.html file in your preferred browser to start exploring the website.
 Customization
 To customize product information:
 
@@ -44,8 +35,8 @@ To modify styles:
 
 Edit the <style> sections in each HTML file or extract them into a shared styles.css file for easier maintenance.
 Future Enhancements
-Add a backend for order management and form handling.
-Create dynamic product pages using JavaScript or a framework like React or Vue.js.
+Add further backend for order management and form handling.
+
 Include user authentication for order tracking.
 Contact
 For inquiries, suggestions, or collaborations:
