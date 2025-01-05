@@ -10,18 +10,7 @@ Footer: Includes links to privacy policies, terms, and contact information.
 Technologies Used
 HTML: For structuring the content.
 CSS: For styling and creating a responsive layout.
-Project Structure
-graphql
-Copy code
 
-How to Run Locally
-Clone the Repository:
-
-git clone https://github.com/your-repo/bakery-website.git
-
-Navigate to the Project Folder:
-
-cd bakery-website
 
 Open in Browser:
 
@@ -29,7 +18,7 @@ Open the index.html file in your preferred browser to start exploring the websit
 Customization
 To customize product information:
 
-Update the relevant productX.html files for text, images, and links.
+Update the relevant .html files for text, images, and links.
 Add new products by duplicating a product HTML file and updating the content.
 To modify styles:
 
