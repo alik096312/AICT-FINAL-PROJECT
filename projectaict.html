@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+        }
+        header {
+            background: #d9a7a7;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+    }
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-size: 1rem;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: #e9c5c5;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            color: #633d3d;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            background: #633d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background: #815757;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px;
+        }
+        .product {
+            text-align: center;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+        .product img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        .product h3 {
+            color: #633d3d;
+            margin-bottom: 10px;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .product button {
+            padding: 10px 15px;
+            background: #633d3d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #d9a7a7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="projectaict.html"><div class="logo">BAKER CO.</div></a>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="recipies.html">Recipes</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Taste the Original Cookies</h1>
+        <a href="about.html"><button>Learn More</button></a>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product">
+            <a href="product1.html">
+                <img src="cookie1.png" alt="Handmade Pretzels">
+            </a>
+            <h3>Handmade Pretzels</h3>
+            <p>Traditional pretzels with a touch of honey.</p>
+            <a href="product1.html"><button>Order Now</button></a>
+        </div>
+        <div class="product">
+            <a href="product2.html">
+                <img src="cookie2.png" alt="Wheat Cookies">
+            </a>
+            <h3>Wheat Cookies</h3>
+            <p>Traditional cookies with chocolate particles.</p>
+            <a href="product2.html"><button>Order Now</button></a>
+        </div>
+        <div class="product">
+            <a href="product3.html">
+                <img src="cookie3.png" alt="Sesame Cookies">
+            </a>
+            <h3>Sesame Cookies</h3>
+            <p>Wheat cookies made like by your Grandma.</p>
+            <a href="product3.html"><button>Order Now</button></a>
+        </div>
+        <div class="product">
+            <a href="product4.html">
+                <img src="cookiep4.png" alt="Chocolate Chip Cookies">
+            </a>
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Classic cookies with rich chocolate chips.</p>
+            <a href="product4.html"><button>Order Now</button></a>
+        </div>
+        <div class="product">
+            <a href="product5.html">
+                <img src="cookiep5.png" alt="Oatmeal Raisin Cookies">
+            </a>
+            <h3>Oatmeal Raisin Cookies</h3>
+            <p>Healthy cookies with oats and raisins.</p>
+            <a href="product5.html"><button>Order Now</button></a>
+        </div>
+        <div class="product">
+            <a href="product6.html">
+                <img src="cookiep6.png" alt="Butter Shortbread">
+            </a>
+            <h3>Butter Shortbread</h3>
+            <p>Rich and buttery shortbread cookies.</p>
+            <a href="product6.html"><button>Order Now</button></a>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 40px; text-align: center;">
+        <h2>Contact Us</h2>
+        <p>Email: info@bakerco.com | Phone: 123-456-7890</p>
+        <p>Visit us at Bakery Co. Islamabad.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Baker Co. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
