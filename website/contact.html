@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bakery</title>
+    <style>
+        body {
+            background-color: #fff8f0;
+        }
+
+        header {
+            background: #d9a7a7;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 15px;
+            font-size: 1rem;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            background-color: #fbd7d7;
+            padding: 50px;
+            border-radius: 15px;
+            margin: 50px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact-container h2 {
+            color: #a55757;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #e8b3b3;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-form button {
+            background-color: #a55757;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #843d3d;
+        }
+
+        .contact-details {
+            margin-top: 30px;
+            color: #a55757;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .contact-details a {
+            color: #843d3d;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        
+        function validateForm(event) {
+            event.preventDefault(); 
+            const name = document.forms["contactForm"]["name"].value.trim();
+            const email = document.forms["contactForm"]["email"].value.trim();
+            const phone = document.forms["contactForm"]["phone"].value.trim();
+            const message = document.forms["contactForm"]["message"].value.trim();
+
+            if (!name || !email || !phone || !message) {
+                alert("All fields are required. Please fill out the form completely.");
+                return false;
+            }
+
+            if (!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (!/^\d+$/.test(phone)) {
+                alert("Phone number must contain only digits.");
+                return false;
+            }
+
+            alert("Thank you for contacting us! Your message has been submitted.");
+            document.forms["contactForm"].reset(); 
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="projectaict.html"><div class="logo">BAKER CO.</div></a>
+        <nav>
+            <a href="projectaict.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="recipies.html">Recipes</a>
+        </nav>
+    </header>
+    <div class="contact-container">
+        <h2>If you want to ask something, write a message.</h2>
+        <form name="contactForm" class="contact-form" onsubmit="validateForm(event)">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Phone" required />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Contact Us</button>
+        </form>
+        <div class="contact-details">
+            <p><br>Islamabad . Pakistan.</p>
+            <p>+92 3154742222</p>
+            <p>mybakary@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>
+
